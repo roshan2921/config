@@ -1,16 +1,14 @@
 <div class="container-fluid my-2">
   <cbc-ui-table-filter
-  *ngIf="loading"
-  [filterItems]="filterItems"
-  [(criteria)]="criteria"
-  [originalCriteria]="originalCriteriaValue"
-  (criteriaChange)="onCriteriaChange()"
-  (reset)="resetFilter()"
->
-</cbc-ui-table-filter>
+    *ngIf="loading"
+    [filterItems]="filterItems"
+    [(criteria)]="criteria"
+    [originalCriteria]="originalCriteriaValue"
+    (criteriaChange)="onCriteriaChange()"
+    (reset)="resetFilter()"
+  >
+  </cbc-ui-table-filter>
 </div>
-
-
 
 <table *ngIf="loading" class="table table-info table-striped text-center">
   <thead>

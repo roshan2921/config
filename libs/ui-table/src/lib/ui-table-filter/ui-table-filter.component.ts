@@ -38,6 +38,10 @@ export class UiTableFilterComponent {
     if (this.criteria.searchTerm == '') {
       this.usedFilterItems = this.usedFilterItems - 1;
     }
+    if (this.criteria.date == "") {
+      debugger
+      this.usedFilterItems = this.usedFilterItems - 1
+    }
   }
 
   private updateUsedFilterItems(): void {

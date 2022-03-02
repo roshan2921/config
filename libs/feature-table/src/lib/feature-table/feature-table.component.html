@@ -18,6 +18,19 @@
       </div>
     </ng-template>
   </cbc-ui-table-filter-item>
+
+  <cbc-ui-table-filter-item>
+    <ng-template let-criteria>
+      <strong>Filter by Date</strong>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Date</span>
+        <input type="date" class="form-control" [(ngModel)]="criteria.date">
+
+      </div>
+    </ng-template>
+  </cbc-ui-table-filter-item>
+
   <cbc-ui-table-col displayName="Id" name="id"></cbc-ui-table-col>
   <cbc-ui-table-col displayName="From" name="from">
     <ng-template let-value>{{ value }} </ng-template>
